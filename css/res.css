@@ -1,0 +1,363 @@
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .search-box {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .search-box input {
+        width: calc(100% - 40px);
+    }
+
+    .nav-items {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-items a {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .carousel-slide {
+        flex: 0 0 50%;
+        
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column, .footer-logo {
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-container > div:not(:first-child)::before {
+        border: none;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  .sidebar-container{
+      margin-top: 200px;
+      width: 100%;
+      
+  }
+
+  .form-container {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .nav-menu {
+      align-items: center;
+  }
+
+  .nav-item {
+      text-align: center;
+      width: 100%;
+  }
+
+  .profile-header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .profile-pic {
+      margin: 0 0 10px 0;
+  }
+
+  .main-content {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .basket-container {
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    max-width: 100%;
+}
+
+.checkout {
+    padding: 10px 20px;
+    font-size: 16px;
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+.cart {
+  padding-left: 80px;
+  max-width: 100%;
+  
+}
+
+.bill-container {
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -70px;
+  margin-right: -70px;
+}
+
+.bill-heading {
+  margin-left: -70px;
+  margin-bottom: 10px;
+}
+
+/*.delivery-section {
+  max-width: 215px;
+  margin-left: -70px;
+  
+}*/
+
+.delivery-section {
+  width: 80%;
+  padding-left: 90px;
+  padding-right: 0;
+
+}
+
+.pay-button {
+  padding: 15px;
+  width: 65%;
+}
+
+}
+
+@media (max-width: 600px) {
+
+  .cart {
+      padding-left: 100px;
+      max-width: 100%;
+      
+  }
+  
+  .item {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .item .details {
+      flex-grow: 1;
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .quantity-actions {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-right: 0;
+  }
+
+  .quantity-header {
+      margin-top: -20px;
+      margin-bottom: 15px;
+  }
+
+  .actions {
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+
+  
+
+  .subtotal-container {
+      align-items: flex-start;
+      margin-top: 20px;
+  }
+
+  .subtotal-header {
+      text-align: left;
+      margin-top: -20px;
+      margin-bottom: 15px;
+  }
+
+  .subtotal {
+      margin-top: 5px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+    .carousel-slide {
+        flex: 0 0 100%;
+    }
+}
+
+/*--------------basket--------------*/
+
+@media screen and (max-width: 1200px) {
+    .bill-details-rows-parent {
+      padding-left: 33px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .bill-details,
+    .delivery-to-home,
+    .proceed-to-pay {
+      font-size: var(--font-size-10xl);
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .frame-parent {
+      gap: var(--gap-8xl);
+    }
+    .your-basket-parent {
+      gap: var(--gap-11xl);
+    }
+    .basketd-inner {
+      padding-left: var(--padding-19xl);
+      padding-right: var(--padding-20xl);
+      box-sizing: border-box;
+    }
+    .frame-parent4 {
+      display: none;
+    }
+    .frame-parent5 {
+      flex-wrap: wrap;
+    }
+    .frame-wrapper4 {
+      max-width: 100%;
+    }
+    .frame-parent3 {
+      gap: var(--gap-8xl);
+    }
+    .bill-details-rows-parent {
+      flex-wrap: wrap;
+    }
+    .items-summary {
+      padding: var(--padding-xl) 35px var(--padding-12xl) 42px;
+      box-sizing: border-box;
+    }
+    .delivery-details {
+      gap: var(--gap-11xl);
+    }
+    .delivery-details-wrapper {
+      padding-left: var(--padding-19xl);
+      padding-right: var(--padding-20xl);
+      box-sizing: border-box;
+    }
+    .basketd {
+      gap: 19px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .quantity-parent {
+      gap: 71px;
+    }
+    .your-basket-parent {
+      gap: 15px;
+    }
+    .b2,
+    .b3,
+    .b4 {
+      font-size: var(--font-size-base);
+    }
+    .div3,
+    .div4,
+    .div5 {
+      font-size: var(--font-size-xl);
+    }
+    .b5 {
+      font-size: var(--font-size-lgi);
+    }
+    .frame-parent9 {
+      flex-wrap: wrap;
+    }
+    .div6,
+    .div7,
+    .div8 {
+      font-size: var(--font-size-xl);
+    }
+    .b6 {
+      font-size: var(--font-size-lgi);
+    }
+    .frame-parent14 {
+      flex-wrap: wrap;
+    }
+    .div10,
+    .div11,
+    .div9 {
+      font-size: var(--font-size-xl);
+    }
+    .b7 {
+      font-size: var(--font-size-lgi);
+    }
+    .frame-parent17 {
+      flex-wrap: wrap;
+    }
+    .frame-parent13 {
+      gap: 108px;
+    }
+    .frame-parent8 {
+      gap: 111px;
+    }
+    .bill-details {
+      font-size: var(--font-size-3xl);
+    }
+    .handling-fee-incl,
+    .item-saving,
+    .mrp-total,
+    .to-pay {
+      font-size: var(--font-size-xl);
+    }
+    .bill-details-row-labels {
+      gap: 34px;
+    }
+    .div12,
+    .div13,
+    .div14,
+    .div15 {
+      font-size: var(--font-size-xl);
+    }
+    .bill-details-rows-parent {
+      padding-top: var(--padding-4xl);
+      padding-bottom: var(--padding-6xl);
+      box-sizing: border-box;
+    }
+    .items-summary {
+      padding-left: var(--padding-xl);
+      box-sizing: border-box;
+    }
+    .delivery-to-home {
+      font-size: var(--font-size-3xl);
+    }
+    .address {
+      font-size: var(--font-size-xl);
+    }
+    .proceed-to-pay {
+      font-size: var(--font-size-3xl);
+    }
+    .proceed-to-pay-wrapper {
+      padding-left: var(--padding-xl);
+      box-sizing: border-box;
+    }
+  }
+
+/*--------------basket--------------*/

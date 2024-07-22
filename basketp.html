@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Basket</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/basketp.css">
+    <link rel="stylesheet" href="./css/res.css">
+    
+
+
+</head>
+<body>
+
+
+     <!-------------------------Header-------------------------->
+     <header class="header">
+        <div class="logo">
+            <a href="./home.html"><img src="./imgs/logo.png" alt="Logo"></a>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <!--<span class="search-icon">
+                <img src="./imgs/search.png" alt="Search">
+            </span>-->
+        </div>
+        <div class="nav-items">
+            <a href="categories.html">Categories</a>
+            <a href="./basketp.html">MyBasket</a>
+            <!--<a href="#basket"><img src="basket.png" alt="My Basket"></a>-->
+            <a href="./profilep.html"><img src="./imgs/profile.png" alt="Profile"></a>
+        </div>
+    </header>
+    <!-------------------------Header-------------------------->
+
+    <div class="basket-container">
+        <h1>Your Basket</h1>
+        <div class="basket-summary">
+            <p class="subtotal">Subtotal (3 items): ₹500.00</p>
+            <div class="savings">Savings: ₹49.00</div>
+            <button class="checkout">Checkout</button>
+        </div>
+    </div>
+   
+
+    
+
+    <div class="cart">
+        <h2>Items </h2>
+        <div class="category">Vegetables</div>
+        <div class="item">
+            <div class="image">
+                <img src="./imgs/basket (1).png" alt="Tomato">
+            </div>
+            <div class="details">
+                <p>Tomato (Tamata)</p>
+                <p class="price">₹50 <span class="original-price">₹60</span></p>
+            </div>
+            <div class="quantity-actions">
+                <div class="quantity-header">Quantity</div>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+                <div class="actions">
+                    <button>Delete</button>
+                    <hr>
+                    <button>Save for later</button>
+                </div>
+            </div>
+            <div class="subtotal-container">
+                <div class="subtotal-header">Subtotal</div>
+                <div class="subtotal">₹50</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bill-section">
+        <h1 class="bill-heading">Bill Details</h1>
+        <div class="bill-container">
+            <div class="bill-item">
+                <span>MRP Total</span>
+                <span>₹50</span>
+            </div>
+            <div class="bill-item">
+                <span>Item Saving</span>
+                <span>- ₹21</span>
+            </div>
+            <div class="bill-item">
+                <span>Handling Fee (incl GST)</span>
+                <span>₹5</span>
+            </div>
+            <div class="bill-item total">
+                <span>To Pay</span>
+                <span>₹55</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="delivery-section">
+        <h1 class="delivery-heading">Delivery To Home</h1>
+        <p class="delivery-address">Address.........</p>
+        <a href="payment.html"><button class="pay-button">Proceed to Pay</button></a>
+    </div>
+   
+
+    <!-------------------------footer-------------------------->
+    <footer class="unique-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1 class="logo-text">GROCYFI</h1>
+            </div>
+            <div class="footer-column">
+                <h2 class="footer-heading">Get In Touch</h2>
+                <p>Telephone :</p>
+                <p>Email Id :</p>
+            </div>
+            <div class="footer-column">
+                <h2 class="footer-heading">Learn More</h2>
+                <p>About Us</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="footer-column">
+                <h2 class="footer-heading">Connect With Us</h2>
+                <div class="social-icons">
+                    <a href="#"><img src="./imgs/ic_baseline-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="./imgs/mdi_instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="./imgs/mdi_youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="./imgs/devicon_twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-------------------------footer-------------------------->
+
+</body>
+</html>

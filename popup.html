@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PopUp Page</title>
+    <link href="popup.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      body {
+        background-image: url('./images/pop2.gif'), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: darken;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the entire body */
+      }
+
+      .container {
+        position: relative;
+        text-align: center;
+      }
+
+      .container img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        animation: fadeInUp 1s ease-in-out;
+      }
+      @media only screen and (max-width: 400px) {
+            .container img {
+              margin-bottom: 20px;
+            }
+        }
+
+
+      .container h2 {
+        font-size: 70px;
+        color: #23A128;
+        margin-bottom: 20px;
+        animation: fadeInUp 1s ease-in-out 0.5s;
+        animation-fill-mode: both;
+        font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to h2 */
+        font-weight: 800;
+      }
+      @media only screen and (max-width: 400px) {
+            .container h2 {
+                font-size: 50px;
+                text-align: center;
+            }
+        }
+
+      .container p {
+        font-size: 23px;
+        color: white;
+        opacity: 0.8;
+        animation: fadeInUp 1s ease-in-out 1s;
+        animation-fill-mode: both;
+        font-family: 'Open Sans', sans-serif; /* Apply Open Sans font to p */
+      }
+      @media only screen and (max-width: 400px) {
+            .container p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+
+      .container button {
+        padding: 12px 150px;
+        margin-top: 10px;
+        font-size: 23px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: #4CAF50;
+        border-radius: 15px;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: opacity 0.5s, transform 0.2s;
+        animation: fadeInUp 1.5s ease-in-out 1.5s;
+        animation-fill-mode: both;
+      }
+      @media only screen and (max-width: 400px) {
+            .container button {
+                padding: 10px 80px;
+                font-size: 20px;
+            }
+        }
+
+      .container button:hover {
+            background-color: #3dc642; /* Change background color on hover */
+            color: white; /* Change text color on hover */
+            cursor: pointer;
+      }
+
+
+      .container button:hover {
+        opacity: 0.5;
+        transform: scale(1.1);
+      }
+
+      .container img {
+        height: 138px;
+        width: 141px;
+        margin-bottom: -50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="./images/grocery-bag--removebg-preview.png" alt="Your Image"> <!-- Replace with your image path -->
+      <h2>GROCYFI</h2>
+      <p>Get your groceries delivered in record time with our fastest delivery service!</p>
+      <a href="./login.html"> <button>Get Started</button> </a>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

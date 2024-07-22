@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,Initial-scale=1.0">
+    <title>Email Login Page</title>
+    <link href="" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   
+
+    <style>
+       
+       :root {
+    --primary: hsl(0, 0%, 100%, 0.15);
+    --secondary: hsl(122, 60%, 52%, 0.75);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: 'playball';
+    font-size: 4.5rem;
+    color: white;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    background: linear-gradient(130deg, var(--primary), var(--secondary));
+    overflow-x: hidden;
+    height: 730px; 
+    background-size: cover; /* Scales the image to cover the entire element */
+    background-position: center; /* Centers the image within the element */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.background-image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0; /* Place the image behind the container */
+        width: 550px; /* Adjust as needed */
+        height: 730px; /* Adjust as needed */
+        opacity: 0.9;
+    }
+    
+ @media only screen and (max-width: 400px) {
+    .background-image {
+      width: 480px; /* Adjust as needed */
+      height: 100%; 
+      overflow: hidden;
+      overflow-x: hidden !important;
+      
+    }
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1110px;
+    height: 80vh; /* Use viewport height units for responsiveness */
+    max-height: 568px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1;
+    justify-content: center ; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 20px; /* Add padding to the container itself */
+}
+@media only screen and (max-width: 400px) {
+            .container {
+               width: 95% !important;
+               height: 468px;
+               box-sizing: border-box;
+               overflow: hidden;
+            }
+        }
+
+.content {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the element's width */
+    text-align: center;
+}
+
+
+.box {
+    position: fixed;
+    top: 110px !important; /* Adjust these values to fix the position */
+    right: 280px !important; /* Initial value */
+    width: 395px; /* Responsive width */
+    max-width: 400px; /* Max width to ensure it's not too wide */
+    height: 488px;
+    padding: 20px;
+    background: #70d273bf;
+    border-radius: 25px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+@media (max-width : 800px) {
+    .box {
+        top: 150px !important;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .box {
+      display: none;
+    }
+  }
+
+
+
+.box1 {
+    position: fixed;
+    top: 155px!important; /* Adjust these values to fix the position */
+    right: 325px !important; /* Initial value */
+    width: 395px; /* Responsive width */
+    max-width: 302px; /* Max width to ensure it's not too wide */
+    height: 394px;
+    padding: 20px;
+    background: #ffffffbf;
+    border-radius: 25px;
+    box-sizing: border-box;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+@media (max-width : 1245px) {
+    .box1 {
+        top: 150px !important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .box1 {
+      display: none;
+    }
+  }
+
+.image {
+    position: fixed;
+    top: 155px!important; /* Adjust these values to fix the position */
+    right: 325px !important; /* Initial value */
+    width: 395px; /* Responsive width */
+    max-width: 302px; /* Max width to ensure it's not too wide */
+    height: 394px;
+    padding: 20px;
+    background: #ffffffbf;
+    border-radius: 25px;
+    box-sizing: border-box;
+    z-index: 1 !important;
+    opacity: 1;
+}
+
+@media (max-width : 1440px) {
+    .image {
+        top: 150px !important;
+    }
+}
+
+
+
+.b {
+  text-align: left;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 400px;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: bold !important;
+  padding-left: 50px; /* Adjust padding to shift right */
+}
+
+.b h2 {
+    margin-top: -90px !important; /* Margin between h2 and h3 */
+    font-size: 30px;
+    margin-left: -20px;
+   
+}
+
+@media only screen and (max-width: 400px) {
+    .b h2 {
+     margin-top: 30px;
+     margin-bottom: 10px;
+     font-size: 18px !important;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .b h2 {
+     margin-top: 30px;
+     margin-bottom: 10px;
+     font-size: 20px;
+    }
+  }
+
+
+.b h3 {
+    color: #23A128;
+    font-weight: bold !important;
+    font-style: 'Montserrat', sans-Serif;
+    font-size: 20px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
+@media only screen and (max-width: 400px) {
+    .b h3 {
+      text-align: center;
+      margin-top: 0px !important;
+      font-size: 20px;
+     
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .b h3 {
+      text-align: center;
+      margin-top: 0px !important;
+      font-size: 20px;
+      margin-top: 10px;
+     
+    }
+  }
+
+.content {
+    margin-top: 180px;
+}
+
+
+.center {
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    width: 400px;
+        }
+
+        .center form{
+            padding: 0 50px;
+            box-sizing: border-box;
+        }
+
+ form .txt-field {
+            position: relative;
+            border-bottom: 2px solid #adadad;
+            margin: 10px 0;
+            width: 350px;
+            right: 255px;
+            margin-left: 230px;
+        }
+ @media only screen and (max-width: 600px) {
+            form .txt-field {
+                margin-left: -10px;
+            } 
+        }
+ @media only screen and (max-width: 400px) {
+            form .txt-field {
+                margin-left: -30px;
+                margin-top: 30px;
+            } 
+        }
+
+       
+
+        .txt-field input{
+            width: 100%;
+            padding: 0 5px;
+            height: 40px;
+            font-size: 16px;
+            border: none;
+            background: none;
+            outline: none;
+        }
+
+        .txt-field label {
+            position: absolute;
+            top: 40%;
+            color: #adadad;
+            font-size: 16px;
+            pointer-events: none;
+            transition: transform .5s; /* Correcting 'transform' to 'transition' */
+            font-weight: 500;
+            margin-left: -350px;
+            white-space: nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+    .txt-field label {
+        margin-left:-350px;
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .txt-field label {
+        margin-left:-350px;
+    }
+}
+
+
+
+    .txt-field span::before {
+            content: '';
+            position: absolute;
+            top: 40%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transition: .5s;
+        }
+
+        .txt-field input:focus ~ label,
+        .txt-field input:valid ~ label {
+            top: -5px;
+        }
+
+        .txt-field input:focus ~ span::before,
+        .txt-field input:valid ~ span::before {
+           width: 100%;
+        }
+
+        .pass {
+            margin: 30px 100px 20px -20px;
+            cursor: pointer;
+            color: #a6a6a6;
+            font-size: 13px;
+            font-style: 'Open Sans';
+            font-weight: lighter;
+            white-space: nowrap;
+            margin-top: 10px;
+        }
+        @media only screen and (max-width: 600px) {
+            .pass{
+                margin: 10px 70px 20px -265px !important;
+                font-size: 13px !important;  
+
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .pass{
+                margin: 10px 70px 20px -285px !important;
+                font-size: 13px !important;  
+
+            }
+        }
+
+        .pass:hover {
+            text-decoration: underline;
+        }
+
+
+       .button {
+            width: 100%;
+            height: 40px;
+            border: none;
+            background: #3DCE43;
+            border-radius: 15px;
+            font-size: 17px;
+            font-weight: 300;
+            cursor: pointer;
+            outline: none;
+            font-style: 'Open Sans';
+            color: white;
+            margin-top: 0px;
+            
+        }
+        @media only screen and (max-width: 600px) {
+           .button {
+                margin-left: -220px;
+                margin-top: 20px;
+                
+            }
+        }
+        @media only screen and (max-width: 400px) {
+           .button {
+                margin-left: -265px;
+                margin-top: 30px;
+                
+            }
+        }
+
+        .button:hover  {
+            background-color: #3dc642; /* Change background color on hover */
+            color: white; /* Change text color on hover */
+            cursor: pointer;
+        }
+
+        .center {
+            margin: 10px;
+            left: 250px;
+        }
+   </style>
+  </head>
+  <body>
+   
+    <img class="background-image" src="./images/fruit_basket-removebg-preview.png" alt="Background Image">
+
+     <div class="container">
+            <div class="content">
+                <div class="b">
+                    <h2>Help us to get to know you.</h2>
+                    <h3>GROCIFY</h3>
+                    <div class="center">
+                        <form method="post">
+          <div class="txt-field">
+            <input type="text" class="form-control" required>
+            <label>Enter Email</label>
+          </div>
+          <div class="pass">By continuing you agree to our Terms & Conditions & <br>Privacy Policy</div>
+          <a href="location.html"> <button class="button">Confirm Details</button> </a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<div class="box " style="max-width: 395px; height: 488px; ">
+    <div class="box1">
+        <img class="image" src="./images/email.png" alt="image">
+    </div>
+    </div>
+</div>
+
+   
+
+
+</body>
+</html>
+   <script src="D:\Grocify\bootstrap-5.3.3-dist (1)\bootstrap-5.3.3-dist\js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

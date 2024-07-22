@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+.form-container {
+    width: 75%;
+    padding: 20px;
+}
+
+.past-orders-container {
+    
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.past-orders-container h2 {
+    color: #4caf50;
+    margin-bottom: 30px;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+.order-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.order-image {
+    flex: 1;
+    max-width: 150px;
+    margin-right: 20px;
+    padding-top: 15px;
+}
+
+.order-image img {
+    padding-bottom: 50px;
+    width: 65%;
+    border-radius: 8px;
+}
+
+.order-details {
+    flex: 2;
+}
+
+.order-details h3 {
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.order-details p {
+    margin-bottom: 10px;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.order-status {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.order-status .status-icon {
+    color: green;
+    margin-left: 10px;
+}
+
+.reorder-button {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.reorder-button:hover {
+    background: #45a049;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 100%;
+    }
+
+    .order-card {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .order-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .order-status {
+        position: static;
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+}
